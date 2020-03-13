@@ -1,0 +1,168 @@
+<%-include("header")-%>
+
+<div class="site-blocks-cover overlay" style="background-image: url(images/hero_2.jpg);" data-aos="fade" id="home-section">
+
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-8 mt-lg-5 text-center">
+        <h1 class="text-uppercase" data-aos="fade-up">Cryptographie Classique</h1>
+      </div>
+    </div>
+  </div>
+  <a href="#cesar" class="mouse smoothscroll">
+    <span class="mouse-icon">
+      <span class="mouse-wheel"></span>
+    </span>
+  </a>
+</div>
+
+<section class="site-section bg-light" id="cesar" data-aos="fade">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 mb-5">
+        <div class="col-12 text-center" data-aos="fade">
+          <h2 class="section-title mb-3">Chiffre de César</h2>
+        </div>
+        <div class="row form-group">
+          <div class="col-md-12">
+            <textarea name="message" id="messageCesar" cols="30" rows="7" class="form-control" placeholder="Write your text here..."></textarea>
+          </div>
+          <div class="col-md-1 mb-3 mb-md-0">
+            <label class="text-black" for="fname">Décalage(entier)</label>
+            <input type="text" id="keyCesar" class="form-control">
+          </div>
+        </div>
+        <div class="row form-group">
+          <div class="col-md-12" style="text-align:center;">
+            <input type="submit" id="buttonCesar" value="Chiffrer" class="btn btn-primary btn-md text-white" style="margin:20px;">
+            <input type="submit" id="buttonCesar1" value="Déhiffrer" class="btn btn-primary btn-md text-white" style="margin:20px;">
+            <div class="row form-group">
+              <div class="col-md-12">
+                <textarea name="message" id="resultatCesar" cols="30" rows="7" class="form-control" placeholder="Résultat"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="site-section bg-light" id="affine" data-aos="fade">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 mb-5">
+        <div class="col-12 text-center" data-aos="fade">
+          <h2 class="section-title mb-3">Chiffrement Affine</h2>
+        </div>
+        <div class="row form-group">
+          <div class="col-md-12">
+            <textarea name="message" id="messageAffine" cols="30" rows="7" class="form-control" placeholder="Write your text here..."></textarea>
+          </div>
+          <div class="col-md-1 mb-3 mb-md-0">
+            <label class="text-black" for="fname">a</label>
+            <input type="text" id="aKeyAffine" class="form-control">
+          </div>
+          <div class="col-md-1 mb-3 mb-md-0">
+            <label class="text-black" for="fname">b</label>
+            <input type="text" id="bKeyAffine" class="form-control">
+          </div>
+        </div>
+        <div class="row form-group">
+          <div class="col-md-12" style="text-align:center;">
+            <input type="submit" id="buttonAffine" value="Chiffrer" class="btn btn-primary btn-md text-white" style="margin:20px;">
+            <input type="submit" id="buttonAffine1" value="Déhiffrer" class="btn btn-primary btn-md text-white" style="margin:20px;">
+            <div class="row form-group">
+              <div class="col-md-12">
+                <textarea name="message" id="resultatAffine" cols="30" rows="7" class="form-control" placeholder="Résultat"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-section bg-light" id="hill" data-aos="fade">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 mb-5">
+        <div class="col-12 text-center" data-aos="fade">
+          <h2 class="section-title mb-3">Chiffre de Hill</h2>
+        </div>
+        <div class="row form-group">
+          <div class="col-md-12">
+            <textarea name="message" id="messageHill" cols="30" rows="7" class="form-control" placeholder="Write your text here..."></textarea>
+          </div>
+          <div class="col-md-1 mb-3 mb-md-0">
+            <label class="text-black" for="fname">a</label>
+            <input type="text" id="aKeyHill" class="form-control">
+          </div>
+          <div class="col-md-1 mb-3 mb-md-0">
+            <label class="text-black" for="fname">b</label>
+            <input type="text" id="bKeyHill" class="form-control">
+          </div>
+          <div class="col-md-1 mb-3 mb-md-0">
+            <label class="text-black" for="fname">c</label>
+            <input type="text" id="cKeyHill" class="form-control">
+          </div>
+          <div class="col-md-1 mb-3 mb-md-0">
+            <label class="text-black" for="fname">d</label>
+            <input type="text" id="dKeyHill" class="form-control">
+          </div>
+        </div>
+        <div class="row form-group">
+          <div class="col-md-12" style="text-align:center;">
+            <input type="submit" id="buttonHill" value="Chiffrer" class="btn btn-primary btn-md text-white" style="margin:20px;">
+            <input type="submit" id="buttonHill1" value="Déhiffrer" class="btn btn-primary btn-md text-white" style="margin:20px;">
+            <div class="row form-group">
+              <div class="col-md-12">
+
+                <textarea name="message" id="resultatHill" cols="30" rows="7" class="form-control" placeholder="Résultat"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="site-section bg-light" id="vignere" data-aos="fade">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 mb-5">
+        <div class="col-12 text-center" data-aos="fade">
+          <h2 class="section-title mb-3">Chiffre de Vigenère</h2>
+        </div>
+        <div class="row form-group">
+          <div class="col-md-12">
+
+            <textarea name="message" id="messageVignere" cols="30" rows="7" class="form-control" placeholder="Write your text here..."></textarea>
+          </div>
+          <div class="col-md-1 mb-3 mb-md-0">
+            <label class="text-black" for="fname">clé</label>
+            <input type="text" id="keyVignere" class="form-control" style="width:150px;">
+          </div>
+        </div>
+        <div class="row form-group">
+          <div class="col-md-12" style="text-align:center;">
+            <input type="submit" id="buttonVignere" value="Chiffrer" class="btn btn-primary btn-md text-white" style="margin:20px;">
+            <input type="submit" id="buttonVignere1" value="Déhiffrer" class="btn btn-primary btn-md text-white" style="margin:20px;">
+            <div class="row form-group">
+              <div class="col-md-12">
+                <textarea name="message" id="resultatVignere" cols="30" rows="7" class="form-control" placeholder="Résultat"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+<%-include("footer")-%>
